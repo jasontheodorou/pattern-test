@@ -1,0 +1,92 @@
+.s-uip {
+  background: var(--s-text);
+  color: var(--s-bg);
+  border-radius: var(--s-radius-md);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.s-uip__toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.s-uip__tools {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+}
+
+.s-uip__tool {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: transparent;
+  border: none;
+  border-radius: 999px;
+  font-family: var(--s-font-body);
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.65);
+  cursor: pointer;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.s-uip__tool:hover {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.s-uip__tool--active {
+  background: var(--s-bg);
+  color: var(--s-text);
+}
+
+.s-uip__tool--active:hover {
+  background: var(--s-bg);
+  color: var(--s-text);
+}
+
+.s-uip__tool svg {
+  flex-shrink: 0;
+}
+
+.s-uip__copy {
+  background: var(--s-bg);
+  color: var(--s-text);
+  border: none;
+  padding: 9px 18px;
+  font-family: var(--s-font-body);
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 150ms ease;
+  min-width: 130px;
+}
+
+.s-uip__copy:hover {
+  transform: translateY(-1px);
+}
+
+.s-uip__pre {
+  margin: 0;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--s-radius-sm);
+  font-family: var(--s-font-mono);
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.88);
+  white-space: pre-wrap;
+  overflow-x: auto;
+  max-height: 360px;
+  overflow-y: auto;
+}

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, useParams } from 'react-router'
 import { PATTERNS } from '../../registry/patterns'
 import { Controls } from '../components/Controls'
-import { UseWithClaude } from '../components/UseWithClaude'
+import { UseInProject } from '../components/UseInProject'
 import { DeveloperDetails } from '../components/DeveloperDetails'
 import type { DesignerControls } from '../../registry/types'
 import './PatternPage.css'
@@ -85,7 +85,7 @@ export function PatternPage() {
           <p className="s-pp__use-lede">
             Copy the prompt and paste it into Claude Code in your project. Claude will read your theme and adapt the pattern to fit.
           </p>
-          <UseWithClaude pattern={pattern} controls={controls} />
+          <UseInProject pattern={pattern} controls={controls} />
         </section>
 
         <DeveloperDetails pattern={pattern} />
