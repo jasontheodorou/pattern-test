@@ -1,0 +1,8 @@
+.s-mask {
+  display: block;
+  overflow: clip;
+}
+
+.s-mask__item {
+  will-change: transform;
+}

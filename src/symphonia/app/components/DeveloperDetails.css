@@ -1,0 +1,60 @@
+.s-dev {
+  border-top: 1px solid rgba(0,0,0,0.08);
+  padding-top: 20px;
+}
+
+.s-dev__toggle {
+  background: none;
+  border: none;
+  font-family: var(--s-font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--s-muted);
+  cursor: pointer;
+  padding: 0;
+  letter-spacing: 0.02em;
+}
+
+.s-dev__toggle:hover {
+  color: var(--s-text);
+}
+
+.s-dev__body {
+  padding-top: 16px;
+}
+
+.s-dev__list {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 8px 20px;
+  font-family: var(--s-font-body);
+  font-size: 13px;
+  margin: 0;
+}
+
+.s-dev__list dt {
+  font-weight: 600;
+  color: var(--s-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 11px;
+}
+
+.s-dev__list dd {
+  margin: 0;
+  color: var(--s-text);
+}
+
+.s-dev__list code {
+  font-family: var(--s-font-mono);
+  font-size: 12px;
+}
+
+.s-dev__files {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

@@ -1,0 +1,125 @@
+.s-styles {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 48px var(--s-space-page);
+}
+
+.s-styles__head { margin-bottom: 32px; max-width: 720px; }
+
+.s-styles__title {
+  margin: 0 0 12px;
+  font-family: var(--s-font-display);
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  color: var(--s-text);
+  letter-spacing: -0.02em;
+}
+
+.s-styles__lede {
+  margin: 0;
+  font-family: var(--s-font-body);
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--s-muted);
+}
+
+.s-styles__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.s-styles__card {
+  padding: 24px;
+  background: var(--s-surface);
+  border-radius: var(--s-radius-md);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 150ms ease;
+}
+
+.s-styles__card:hover { transform: translateY(-2px); }
+
+.s-styles__card-name {
+  font-family: var(--s-font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--s-text);
+}
+
+.s-styles__card-desc {
+  font-family: var(--s-font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--s-muted);
+}
+
+.s-styles__card-nums {
+  margin-top: auto;
+  font-family: var(--s-font-mono);
+  font-size: 12px;
+  color: var(--s-muted);
+  padding-top: 8px;
+}
+
+.s-styles__crumb {
+  font-family: var(--s-font-body);
+  font-size: 13px;
+  color: var(--s-muted);
+  margin-bottom: 16px;
+}
+
+.s-styles__crumb a { color: var(--s-primary); text-decoration: none; }
+
+.s-styles__preview {
+  padding: 96px 0;
+  min-height: 400px;
+  display: grid;
+  place-items: center;
+}
+
+.s-styles__preview-headline {
+  margin: 0;
+  font-family: var(--s-font-display);
+  font-size: clamp(40px, 6.5vw, 88px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--s-text);
+  text-align: center;
+  max-width: 12ch;
+}
+
+.s-styles__tokens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  margin: 0;
+}
+
+.s-styles__tokens > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.s-styles__tokens dt {
+  font-family: var(--s-font-body);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--s-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.s-styles__tokens dd {
+  margin: 0;
+  font-family: var(--s-font-mono);
+  font-size: 15px;
+  color: var(--s-text);
+}

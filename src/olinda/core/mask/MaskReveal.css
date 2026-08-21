@@ -1,8 +1,0 @@
-.o-mask {
-  display: block;
-  overflow: clip;
-}
-
-.o-mask__item {
-  will-change: transform;
-}

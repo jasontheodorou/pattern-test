@@ -20,10 +20,10 @@ export function HomePage({ onNavigate }: Props) {
         <Box style={{ display: 'flex', gap: 40, alignItems: 'flex-start', flexWrap: 'wrap' }}>
           <Stack gap={16} style={{ flex: 1, minWidth: 280, maxWidth: 560 }}>
             <Text component="h1" style={{ fontSize: 36, fontWeight: 700, color: C.ink, fontFamily: font, margin: 0, lineHeight: 1.15 }}>
-              Olinda pattern library
+              Symphonia pattern library
             </Text>
             <Text style={{ fontSize: 17, color: C.dark, fontFamily: font, lineHeight: 1.65, margin: 0 }}>
-              Olinda is a pattern library and plugin system for Claude Code, for use across Transform.
+              Symphonia is a pattern library and plugin system for Claude Code, for use across Transform.
               Patterns, templates, and themes — built here, used everywhere.
             </Text>
           </Stack>

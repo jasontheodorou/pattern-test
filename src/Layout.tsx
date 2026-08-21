@@ -21,7 +21,7 @@ export function Layout({ children, currentSection, onNavigate }: Props) {
         <Box style={{ maxWidth: 1100, margin: '0 auto', padding: '14px 20px' }}>
           <button onClick={() => onNavigate('home')} style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}>
             <span style={{ color: C.surface, fontFamily: font, fontSize: 15, fontWeight: 600, letterSpacing: '0.01em' }}>
-              Olinda pattern library
+              Symphonia pattern library
             </span>
           </button>
         </Box>

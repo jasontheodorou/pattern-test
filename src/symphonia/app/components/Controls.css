@@ -1,0 +1,56 @@
+.s-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  background: var(--s-surface);
+  border-radius: var(--s-radius-md);
+}
+
+.s-controls__group {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.s-controls__legend {
+  font-family: var(--s-font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--s-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.s-controls__row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.s-controls__chip {
+  padding: 8px 14px;
+  background: var(--s-bg);
+  color: var(--s-text);
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-family: var(--s-font-body);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: background 150ms ease, color 150ms ease;
+}
+
+.s-controls__chip:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+.s-controls__chip--active {
+  background: var(--s-text);
+  color: var(--s-surface);
+}

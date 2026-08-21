@@ -1,0 +1,11 @@
+.s-sticky-scene {
+  position: relative;
+}
+
+.s-sticky-scene__inner {
+  position: sticky;
+  top: var(--s-sticky-top, 0);
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+}

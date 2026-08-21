@@ -1,4 +1,4 @@
-# Olinda V2 Build Pack — Release Review
+# Symphonia V2 Build Pack — Release Review
 
 ## Status
 
@@ -6,7 +6,7 @@
 
 This review checked the pack against:
 
-- the current Olinda repository structure and package manifest;
+- the current Symphonia repository structure and package manifest;
 - the current `App.tsx`, pattern registry, Vercel config and password gate;
 - current Motion for React documentation;
 - current React Router guidance;
@@ -58,13 +58,13 @@ Do not migrate to React Router Framework mode or install `@vercel/react-router` 
 
 Claude Code automatically loads root `CLAUDE.md` project instructions.
 
-The pack previously centred `OLINDA.md`, which would require the agent to be told to read it.
+The pack previously centred `SYMPHONIA.md`, which would require the agent to be told to read it.
 
 V2 should use:
 
 ```text
 CLAUDE.md
-  -> imports docs/OLINDA.md
+  -> imports docs/SYMPHONIA.md
 ```
 
 This makes the architecture durable across future Claude sessions.
@@ -129,7 +129,7 @@ V2 now includes a repository-owned Claude Code web setup hook so dependencies ca
 
 # Required manual decisions before Claude starts
 
-## A. Decide whether Olinda is internal or public
+## A. Decide whether Symphonia is internal or public
 
 Recommended current choice: **internal**.
 
@@ -236,7 +236,7 @@ For browser-only users, no terminal setup should be required once V2 is built. C
 
 For the initial V2 build, you need to do only this:
 
-1. Open Claude Code on the web and select `jasontheodorou/olinda-pattern-library`.
+1. Open Claude Code on the web and select `jasontheodorou/symphonia-pattern-library`.
 2. Make sure the Claude/GitHub connection has access to the repository.
 3. Use Trusted network access (or another policy that permits npm) so Claude can install dependencies.
 4. Give Claude `09_CLAUDE_CODE_START_HERE.md` as the task instruction.
@@ -269,7 +269,7 @@ The best V3 candidates are:
 A registry-driven installer similar in spirit to shadcn:
 
 ```bash
-npx olinda add large-heading
+npx symphonia add large-heading
 ```
 
 The important feature is not the CLI itself; it is that the manifest knows exactly which files and dependencies a pattern needs. The same manifest can drive Claude-based installation for browser users.
@@ -283,7 +283,7 @@ Allow a designer to provide:
 - fonts;
 - optional reference page.
 
-Generate a Olinda theme and preview every pattern in that brand.
+Generate a Symphonia theme and preview every pattern in that brand.
 
 ## 3. Saved collections
 
@@ -347,6 +347,6 @@ A designer should eventually be able to say:
 
 > I need a calm way to explain a four-step process.
 
-and Olinda should return three appropriate live patterns rather than requiring the user to understand the catalogue taxonomy.
+and Symphonia should return three appropriate live patterns rather than requiring the user to understand the catalogue taxonomy.
 
 That is a V3 feature. V2 should first make the visual catalogue excellent.

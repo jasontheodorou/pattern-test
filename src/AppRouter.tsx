@@ -1,29 +1,29 @@
 import { lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route, Outlet } from 'react-router'
 import { MotionConfig } from 'motion/react'
-import { OlindaThemeProvider } from './olinda/theme/OlindaThemeProvider'
-import { defaultTheme } from './olinda/theme/defaultTheme'
-import { SiteChrome } from './olinda/app/components/SiteChrome'
-import { HomePage } from './olinda/app/pages/HomePage'
-import { ExamplesPage } from './olinda/app/pages/ExamplesPage'
-import { PatternPage } from './olinda/app/pages/PatternPage'
-import { CollectionPage } from './olinda/app/pages/CollectionPage'
-import { StylesPage } from './olinda/app/pages/StylesPage'
-import { UsePage } from './olinda/app/pages/UsePage'
-import { AboutPage } from './olinda/app/pages/AboutPage'
-import { NotFoundPage } from './olinda/app/pages/NotFoundPage'
+import { SymphoniaThemeProvider } from './symphonia/theme/SymphoniaThemeProvider'
+import { defaultTheme } from './symphonia/theme/defaultTheme'
+import { SiteChrome } from './symphonia/app/components/SiteChrome'
+import { HomePage } from './symphonia/app/pages/HomePage'
+import { ExamplesPage } from './symphonia/app/pages/ExamplesPage'
+import { PatternPage } from './symphonia/app/pages/PatternPage'
+import { CollectionPage } from './symphonia/app/pages/CollectionPage'
+import { StylesPage } from './symphonia/app/pages/StylesPage'
+import { UsePage } from './symphonia/app/pages/UsePage'
+import { AboutPage } from './symphonia/app/pages/AboutPage'
+import { NotFoundPage } from './symphonia/app/pages/NotFoundPage'
 
 const LegacyShell = lazy(() => import('./legacy'))
 
-function OlindaLayout() {
+function SymphoniaLayout() {
   return (
-    <OlindaThemeProvider theme={defaultTheme}>
+    <SymphoniaThemeProvider theme={defaultTheme}>
       <MotionConfig reducedMotion="user">
         <SiteChrome>
           <Outlet />
         </SiteChrome>
       </MotionConfig>
-    </OlindaThemeProvider>
+    </SymphoniaThemeProvider>
   )
 }
 
@@ -51,7 +51,7 @@ export function AppRouter() {
           }
         />
 
-        <Route path="/" element={<OlindaLayout />}>
+        <Route path="/" element={<SymphoniaLayout />}>
           <Route index element={<HomePage />} />
           <Route path="examples" element={<ExamplesPage />} />
           <Route path="examples/:patternId" element={<PatternPage />} />

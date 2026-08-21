@@ -1,4 +1,4 @@
-// ─── Olinda palette (used by existing pattern-library patterns) ──────────
+// ─── Symphonia palette (used by existing pattern-library patterns) ──────────
 export const C = {
   ink:     '#202221',
   dark:    '#3C3531',
