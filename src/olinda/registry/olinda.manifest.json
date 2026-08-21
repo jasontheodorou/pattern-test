@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-21T09:43:22.901Z",
+  "generatedAt": "2026-08-21T10:57:17.283Z",
   "patterns": [
     {
       "id": "reveal",
@@ -42,6 +42,86 @@
         "motion"
       ],
       "prompt": "Add Olinda's \"{{name}}\" pattern to {{target}}.\n\nStyle: {{style}}\nEnergy: {{energy}}\nSpeed: {{speed}}\n\nWrap the target content in the <Reveal> component; do not rewrite its\nmarkup. Reveal accepts one child element and fades + rises it into view\nwhen it mounts. Preserve the project's existing colours and typography.\nRespect reduced-motion preferences — the content stays visible when\nmotion is disabled.\n\nRun the project's build after integrating and fix any errors."
+    },
+    {
+      "id": "stagger",
+      "name": "Stagger",
+      "description": "A list of lines that arrive one after another.",
+      "goodFor": [
+        "Editorial statements",
+        "Value propositions",
+        "Feature lists",
+        "Long-form intros"
+      ],
+      "collections": [
+        "Editorial"
+      ],
+      "styles": [
+        "editorial",
+        "clear"
+      ],
+      "status": "ready",
+      "component": "Stagger",
+      "runtime": "dom",
+      "weight": "light",
+      "accessibility": {
+        "reducedMotion": "supported",
+        "keyboard": true,
+        "hoverOnly": false,
+        "autoplay": false
+      },
+      "files": [
+        "src/olinda/patterns/stagger/Stagger.tsx",
+        "src/olinda/patterns/stagger/index.ts",
+        "src/olinda/styles/motionStyles.ts",
+        "src/olinda/styles/energy.ts",
+        "src/olinda/styles/speed.ts",
+        "src/olinda/styles/resolveMotion.ts",
+        "src/olinda/accessibility/reducedMotion.ts"
+      ],
+      "packages": [
+        "motion"
+      ],
+      "prompt": "Add Olinda's \"{{name}}\" pattern to {{target}}.\n\nStyle: {{style}}\nEnergy: {{energy}}\nSpeed: {{speed}}\n\nWrap the target content in the <Stagger> component. Each direct child\nfades and rises into view in sequence. Preserve the project's existing\ncolours, typography, and semantic HTML (Stagger only adds motion).\nRespect reduced-motion preferences — content stays visible when motion\nis disabled.\n\nRun the project's build after integrating and fix any errors."
+    },
+    {
+      "id": "magnetic",
+      "name": "Magnetic",
+      "description": "An element that follows the cursor within a soft field.",
+      "goodFor": [
+        "Primary CTAs",
+        "Brand marks",
+        "Playful specimens",
+        "Interactive footnotes"
+      ],
+      "collections": [
+        "Experimental"
+      ],
+      "styles": [
+        "clear",
+        "editorial"
+      ],
+      "status": "experimental",
+      "component": "Magnetic",
+      "runtime": "dom",
+      "weight": "light",
+      "accessibility": {
+        "reducedMotion": "supported",
+        "keyboard": true,
+        "hoverOnly": true,
+        "autoplay": false
+      },
+      "files": [
+        "src/olinda/patterns/magnetic/Magnetic.tsx",
+        "src/olinda/patterns/magnetic/index.ts",
+        "src/olinda/styles/energy.ts",
+        "src/olinda/styles/speed.ts",
+        "src/olinda/accessibility/reducedMotion.ts"
+      ],
+      "packages": [
+        "motion"
+      ],
+      "prompt": "Add Olinda's \"{{name}}\" pattern to {{target}}.\n\nEnergy: {{energy}}  (controls how strongly the element follows)\nSpeed:  {{speed}}   (controls how snappy the spring feels)\n\nWrap the target element in the <Magnetic> component. It follows the\ncursor within its bounding box with a soft spring. The effect disables\nautomatically on touch devices and under reduced-motion preferences.\nUse sparingly — one hero button or one interactive specimen per page.\n\nPreserve the project's existing colours and typography.\nRun the project's build after integrating and fix any errors."
     }
   ]
 }
